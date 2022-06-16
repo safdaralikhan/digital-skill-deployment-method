@@ -78,4 +78,26 @@ certbot (run this command)
 
 
 
+// everything install with apt-get install
+
+apt-get installl vim
+https://github.com/shakeebanwar/aws-learnig/blob/master/awsCredential.txt
+
+
+
+###################################How to transferfile from one system to another using scp#############################
+1.sudo apt-get install scp
+
+Transfer local to remote server
+
+2.scp filename root@api.libraa.ml:/hnh   //for file
+3.scp -r foldername root@api.libraa.ml:/hnh   //for folder
+
+Transfer remote to local
+
+scp root@api.libraa.ml:/remotelocation /localsystemlocation
+
+
+
+
 
