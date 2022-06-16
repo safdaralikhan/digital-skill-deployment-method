@@ -1,0 +1,81 @@
+login through ssh(Secure Socket Shell):
+
+* ssh root@143.198.70.29
+
+For Update:
+* apt-get update
+
+
+Nginx Installation:
+* apt install nginx
+
+
+Password change:
+* passwd
+
+
+Docker Installation:
+1.sudo apt-get update
+2.sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+3. sudo mkdir -p /etc/apt/keyrings
+4.curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+5.echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+6. sudo apt-get update
+7.sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+8.sudo apt install docker-compose
+
+
+classs 2
+what is docker ?
+Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications
+
+what is docker image ?
+A Docker image is a read-only template that contains a set of instructions for creating a container that can run on the Docker platform.
+
+What is NGINX is used for?
+NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. It started out as a web server designed for maximum performance and stability.
+
+What is Nginx reverse proxy?
+Nginx reverse proxy acts as an intermediate server that intercepts client requests and forwards them to the appropriate upstream backend server and subsequently forwarded a response from the server back to the client. The reverse proxy provides various benefits as an abstract layer above upstream servers.
+
+what is load balancing ?
+A load balancer acts as the “traffic cop” sitting in front of your servers and routing client requests across all servers capable of fulfilling those requests in a manner that maximizes speed and capacity utilization and ensures that no one server is overworked, which could degrade performance.
+
+
+
+docker ps (jo container chal raha hota ha wo ata hai)
+docker images (jo images chal rahy hoty hai wo ata ha)
+service nginx status (ngix working or not)
+
+DEPLOYING STATIC WEBSITE
+1) cd /etc/nginx/sites-enabled (is folder mai reverse proxy banaty ha)
+2) vim xyz.txt (make file)
+3) press i to start typing in file.
+4) save the reverse proxy code.
+5) to save file press (esc shift colun and wq).
+6) to check nginx file is ok (nginx -t)
+7) after save file restart nginx (service nginx restart)
+8) and then write port port to check its live or not.
+9) to delete file (rm -rf and file name)
+to fake folder (mkdir folder name)
+to search where are you (pwd)
+downlaod filezilla for transfer file from your computer to server.
+(https://filezilla-project.org/download.php?show_all=1) LINK
+to check nginx file is ok (nginx -t)
+after save file restart nginx (service nginx restart)
+
+SSL DOMAIN METHOD
+sudo apt install certbot python3-certbot-nginx (install this)
+certbot (run this command)
+
+
+
+
