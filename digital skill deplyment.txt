@@ -95,7 +95,7 @@ Transfer local to remote server
 
 Transfer remote to local
 
-scp root@api.libraa.ml:/remotelocation /localsystemlocation
+scp -r root@api.libraa.ml:/remotelocation /localsystemlocation
 
 
 
