@@ -1,3 +1,25 @@
+
+HOW TO BUT SERVER FROM DIGITALOCEAN
+
+https://www.codewithharry.com/blogpost/setup-ubuntu-20-04-server/
+all steps are written in this link
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+WHAT IS ROOT USER ?
+The root user is a user having the highest privileges on the server. This means that a root user can do anything and everything on the server. This is why it is strongly discouraged to use a root account as it might accidentally delete files/uninstall programs/install programs etc. Hence we will create a user who will have restricted permissions on the server for day-to-day use.
+
+CREATING A NON ROOT USER 
+Execute the following command:
+adduser Username.
+usermod -aG sudo harry.
+
+FIREWALL SETUP
+Our server is public, and we want to protect it from external unwanted connections. We want only selected services exposed to the public on our server.
+We will set up the UFW firewall on our Ubuntu 20.04 server and allow OpenSSH, which allows us to connect to our server.
+ufw allow OpenSSH.
+ufw enable
+You can type the following command to elevate to the root access as and when required.
+sudo su
+
 login through ssh(Secure Socket Shell):
 
 * ssh root@143.198.70.29
@@ -96,6 +118,10 @@ Transfer local to remote server
 Transfer remote to local
 
 scp -r root@api.libraa.ml:/remotelocation /localsystemlocation
+
+
+
+
 
 
 
