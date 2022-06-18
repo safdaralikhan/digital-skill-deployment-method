@@ -1,5 +1,5 @@
 
-HOW TO BUT SERVER FROM DIGITALOCEAN
+HOW TO BUy SERVER FROM DIGITALOCEAN
 
 https://www.codewithharry.com/blogpost/setup-ubuntu-20-04-server/
 all steps are written in this link
