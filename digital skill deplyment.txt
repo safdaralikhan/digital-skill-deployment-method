@@ -64,6 +64,7 @@ A Docker image is a read-only template that contains a set of instructions for c
 
 What is NGINX is used for?
 NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. It started out as a web server designed for maximum performance and stability.
+nginx ek image ha image mtlb wo sari information jo container ko banany k liye chaiye.
 
 What is Nginx reverse proxy?
 Nginx reverse proxy acts as an intermediate server that intercepts client requests and forwards them to the appropriate upstream backend server and subsequently forwarded a response from the server back to the client. The reverse proxy provides various benefits as an abstract layer above upstream servers.
@@ -122,7 +123,19 @@ scp -r root@api.libraa.ml:/remotelocation /localsystemlocation
 
 
 
+port maping
+docker run -p 80:80 nginx
+docker run -d -p 82:80 nginx (for background )
+docker ps (to check what is on working)
+docker stop (to stop container)
+docker ps -a (check all containers)
+ufw allow 5000
+docker system prune
+docker rm -f containerid(force fully kill container)
+docker exec -it 1f bash (go to specif container)
 
+docker cp <source> <destination> (copy file from container to system)
+docker cp contaierid:filename destination file name
 
 
 
