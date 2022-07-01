@@ -112,12 +112,12 @@ https://github.com/shakeebanwar/aws-learnig/blob/master/awsCredential.txt
 1.sudo apt-get install scp
 
 Transfer local to remote server
+yai command system k terminal mai chalana ha.
 
-2.scp filename root@api.libraa.ml:/hnh   //for file
+2.scp filename root@api.libraa.ml:/hnh   //for file (wo file name jo system mai hai us k bd server ka ip or us k andr jjis folder mai dalna ha)
 3.scp -r foldername root@api.libraa.ml:/hnh   //for folder
 
 Transfer remote to local
-
 scp -r root@api.libraa.ml:/remotelocation /localsystemlocation
 
 
@@ -133,9 +133,23 @@ ufw allow 5000
 docker system prune
 docker rm -f containerid(force fully kill container)
 docker exec -it 1f bash (go to specif container)
+service nginx status (status check)
 
 docker cp <source> <destination> (copy file from container to system)
 docker cp contaierid:filename destination file name
+
+ ...............HTML PROJECT DEPLOY ON DOCKER............. 
+docker run -d -p 8000:80 -v /home/shakeeb/Desktop/Others/express-node-js/sequelize/nginx:/usr/share/nginx/html --name safdar nginx
+
+...........EXPLANATIN OF BUILD DEPLOYING WITH DOCKER...............
+1 transfer file from system to server.
+scp filename root@api.libraa.ml:/hnh   //for file (wo file name jo system mai hai us k bd server ka ip or us k andr jjis folder mai dalna ha)
+2 then create docekr image of your build.
+docker run -d -p 8000:80 -v /home/shakeeb/Desktop/Others/express-node-js/sequelize/nginx:/usr/share/nginx/html --name safdar nginx
+docker run -d -p port addres path of build where it is located on server: same as copy --name safdar nginx.
+
+
+
 
 
 
