@@ -1,3 +1,6 @@
+................CSS GRID EVERYTHING.........
+https://learncssgrid.com/
+
 
 HOW TO BUy SERVER FROM DIGITALOCEAN
 
@@ -130,7 +133,7 @@ docker ps (to check what is on working)
 docker stop (to stop container)
 docker ps -a (check all containers)
 ufw allow 5000
-docker system prune
+docker system prune (delete all container)
 docker rm -f containerid(force fully kill container)
 docker exec -it 1f bash (go to specif container)
 service nginx status (status check)
