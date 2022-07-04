@@ -107,8 +107,8 @@ certbot (run this command)
 // everything install with apt-get install
 
 apt-get installl vim
-https://github.com/shakeebanwar/aws-learnig/blob/master/awsCredential.txt
 
+https://github.com/shakeebanwar/aws-learnig/blob/master/awsCredential.txt
 
 
 ###################################How to transferfile from one system to another using scp#############################
@@ -150,6 +150,24 @@ scp filename root@api.libraa.ml:/hnh   //for file (wo file name jo system mai ha
 2 then create docekr image of your build.
 docker run -d -p 8000:80 -v /home/shakeeb/Desktop/Others/express-node-js/sequelize/nginx:/usr/share/nginx/html --name safdar nginx
 docker run -d -p port addres path of build where it is located on server: same as copy --name safdar nginx.
+
+
+
+............APACHE INSTALLATION DOCUMENT.......
+https://linuxhint.com/install_apache_web_server_ubuntu/
+
+
+.............deploy your next js project on docker.............
+step 1
+create dockerfile and write all steps
+step 2
+docker build -t docker imagename ./
+step 3
+now check image is up or not docker images.
+step 4
+docker run -p 3000:3000 docker image name.
+step 5
+check on localhost 3000.
 
 
 
