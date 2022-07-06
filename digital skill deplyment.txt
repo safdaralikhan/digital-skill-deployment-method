@@ -172,7 +172,42 @@ check on localhost 3000.
 
 
 
+........docker compose yml file.....
+STEP 1
+first create dockerfile and write all commands
+#base image
+FROM node:18-alpine
+WORKDIR /app
+COPY package.json /app
+RUN yarn install
+COPY . /app
 
+# Expose port
+EXPOSE 5000
+# CMD ["yarn" , "start"]
+
+STEP 2
+
+then create docker-compose.yml file
+version: "3.7"
+services:
+  
+  valet:
+    build: .
+    command: yarn run start
+    restart: always
+
+    volumes:
+      - .:/app
+
+
+    ports:
+      - "5000:3000"
+      
+ STEP 3     
+docker-compose up --build
+
+check docker file is up
 
 
 
