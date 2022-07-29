@@ -211,3 +211,7 @@ check docker file is up
 
 
 
+REDUX WITH PERSIST
+https://www.linkedin.com/pulse/redux-persist-react-native-joaquin-niembro-bueno?trk=pulse-article_more-articles_related-content-card
+https://blog.reactnativecoach.com/the-definitive-guide-to-redux-persist-84738167975
+
